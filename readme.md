@@ -2,6 +2,9 @@
 * * *
 ### A python tool which collects Hackerone publically available reports. Allows user to search for reports on the basis of keywords.
 
+![help.png](./images/help.png)
+
+
 * * *
 
 ## How To Use
