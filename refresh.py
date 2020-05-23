@@ -24,9 +24,11 @@ def refresh_list(count=5):
         pass
     finally:
         print("\n\n[+] Total fetched: ", len(reports))
+        save_to_db(reports)
+        print("[+] Saved!!")
 
 
 def save_to_db(reports):
-    with open('eggs.csv', 'a') as eggs:
+    with open('eggs.csv', 'w') as eggs:
         for each_report in reports:
             eggs.write(each_report+'\n')

@@ -40,5 +40,5 @@ try:
         print("[+] Refreshing..")
         refresh.refresh_list(int(args.refresh))
         print("[+] Finished!")
-except:
-    pass
+except Exception as e:
+    print(e)
